@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Setup & Meta Tags for Responsiveness -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ARENA X – Premier futuristic esports tournament platform powered by DAYMES GAMEHUB. Compete in fictional games, tournaments, teams, and live schedules.">
+  <meta name="author" content="Frontend Project 2">
+  <title>ARENA X – ESPORTS ARENA | DAYMES GAMEHUB</title>
+
+  <!-- External Stylesheet Link (No external images required) -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar: DAYMES GAMEHUB Platform Partnership -->
+  <div class="top-announcement-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-badge">
+        <span class="live-dot"></span> POWERED BY <strong>DAYMES GAMEHUB</strong>
+      </div>
+      <p class="top-bar-msg">Official Cyber Arena &amp; Pro Tournament Network</p>
+      <a href="#tournaments" class="top-bar-cta">EXPLORE HUB TOURNAMENTS &rarr;</a>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       SECTION 1: NAVBAR & HEADER
+       Contains the branding logo, navigation links, mobile hamburger button,
+       and a call-to-action button. (100% Code-Based, Zero External Images)
+  ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <!-- Self-Contained Brand Logo (Inline SVG + Cyber Typography) -->
+      <a href="#hero" class="brand-logo" aria-label="ARENA X – DAYMES GAMEHUB Home">
+        <span class="logo-shield">
+          <svg viewBox="0 0 36 36" class="logo-shield-svg" aria-hidden="true">
+            <polygon points="18,2 34,10 34,26 18,34 2,26 2,10" fill="#0c1224" stroke="#00f2fe" stroke-width="2.5"/>
+            <line x1="10" y1="10" x2="26" y2="26" stroke="#00f2fe" stroke-width="3" stroke-linecap="round"/>
+            <line x1="26" y1="10" x2="10" y2="26" stroke="#ff007f" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="18" cy="18" r="2.5" fill="#ffffff"/>
+          </svg>
+        </span>
+        <div class="logo-text-block">
+          <div class="logo-main"><span class="logo-white">ARENA</span> <span class="logo-pink">X</span></div>
+          <span class="logo-subtag">DAYMES GAMEHUB</span>
+        </div>
+      </a>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#games" class="nav-link">Games</a></li>
+          <li class="nav-item"><a href="#tournaments" class="nav-link">Tournaments</a></li>
+          <li class="nav-item"><a href="#gamehub" class="nav-link">Gamehub</a></li>
+          <li class="nav-item"><a href="#matches" class="nav-link">Matches</a></li>
+          <li class="nav-item"><a href="#rankings" class="nav-link">Rankings</a></li>
+          <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+          <li class="nav-item"><a href="#teams" class="nav-link">Teams</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- Navbar Action Button -->
+        <a href="#tournaments" class="btn btn-sm btn-neon">Join Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+
+    <!-- =========================================================
+         SECTION 2: HERO SECTION
+         High-energy introductory section with primary headline,
+         subtitle, action buttons, and pure CSS/SVG Cyber Holographic HUD.
+    ========================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Text & CTA Content -->
+        <div class="hero-content">
+          <span class="badge badge-cyber">DAYMES GAMEHUB • Next-Gen Competitive Arena</span>
+          <h1 class="hero-title">ENTER THE ARENA</h1>
+          <p class="hero-subtitle">Compete. Conquer. Become Legendary.</p>
+          <div class="hero-actions">
+            <a href="#tournaments" class="btn btn-primary">EXPLORE TOURNAMENTS</a>
+            <a href="#contact" class="btn btn-outline">JOIN THE ARENA</a>
+          </div>
+          <!-- Quick Hero Statistics in Rupees -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">₹50L+</span>
+              <span class="stat-label">Prize Pools</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">128+</span>
+              <span class="stat-label">Pro Teams</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Live Matches</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Gaming Visual: 100% Self-Contained Holographic Battle Console -->
+        <div class="hero-visual">
+          <div class="visual-wrapper hero-hologram-card">
+            <!-- HUD Upper Bar -->
+            <div class="hud-topbar">
+              <div class="hud-status-indicator">
+                <span class="hud-dot"></span>
+                <span class="hud-status-text">ARENA COMBAT ENGINE ONLINE</span>
+              </div>
+              <span class="hud-ping">8ms • 240 FPS</span>
+            </div>
+
+            <!-- Central Holographic Cyber Crest Graphic -->
+            <div class="hologram-graphic-box">
+              <svg viewBox="0 0 400 280" class="hologram-svg" aria-label="ARENA X Cyber Warrior Crest">
+                <defs>
+                  <linearGradient id="heroCyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00f2fe"/>
+                    <stop offset="50%" stop-color="#7928ca"/>
+                    <stop offset="100%" stop-color="#ff007f"/>
+                  </linearGradient>
+                  <filter id="heroGlow">
+                    <feGaussianBlur stdDeviation="5" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <!-- Perspective Grid Floor -->
+                <g stroke="#00f2fe" stroke-width="1" opacity="0.25">
+                  <line x1="40" y1="260" x2="360" y2="260"/>
+                  <line x1="80" y1="240" x2="320" y2="240"/>
+                  <line x1="120" y1="220" x2="280" y2="220"/>
+                  <line x1="200" y1="200" x2="20" y2="280"/>
+                  <line x1="200" y1="200" x2="120" y2="280"/>
+                  <line x1="200" y1="200" x2="200" y2="280"/>
+                  <line x1="200" y1="200" x2="280" y2="280"/>
+                  <line x1="200" y1="200" x2="380" y2="280"/>
+                </g>
+                <!-- Outer Pulse Rings -->
+                <circle cx="200" cy="115" r="95" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.5"/>
+                <circle cx="200" cy="115" r="75" fill="none" stroke="#ff007f" stroke-width="2" opacity="0.6"/>
+                <!-- Cyber Armor Helm Silhouette -->
+                <polygon points="200,35 255,80 240,165 200,195 160,165 145,80" fill="#0d1428" stroke="url(#heroCyanPurple)" stroke-width="3" filter="url(#heroGlow)"/>
+                <!-- Glowing Cyan Visor -->
+                <polygon points="165,100 235,100 220,122 180,122" fill="#00f2fe" filter="url(#heroGlow)"/>
+                <line x1="165" y1="100" x2="235" y2="100" stroke="#ffffff" stroke-width="2"/>
+                <!-- Central Emblem Spark -->
+                <polygon points="200,50 205,62 217,67 205,72 200,84 195,72 183,67 195,62" fill="#ff007f" filter="url(#heroGlow)"/>
+                <!-- Lower Arc -->
+                <path d="M120,210 Q200,240 280,210" fill="none" stroke="#00f2fe" stroke-width="2.5" filter="url(#heroGlow)"/>
+              </svg>
+            </div>
+
+            <!-- Lower Telemetry Badges -->
+            <div class="hud-telemetry-row">
+              <div class="telemetry-chip">
+                <span class="chip-val">₹50,00,000</span>
+                <span class="chip-lbl">SEASON REWARDS</span>
+              </div>
+              <div class="telemetry-chip">
+                <span class="chip-val">DAYMES CYBER</span>
+                <span class="chip-lbl">HEADQUARTERS</span>
+              </div>
+              <div class="telemetry-chip">
+                <span class="chip-val">PRO 5v5</span>
+                <span class="chip-lbl">CHAMPIONSHIP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 3: FEATURED GAMES
+         Showcases 4 original fictional esports titles with
+         unique genre, description, and 100% self-contained visual banners.
+    ========================================================= -->
+    <section class="section games-section" id="games">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">COMPETITIVE TITLES</span>
+          <h2 class="section-title">FEATURED GAMES</h2>
+          <p class="section-subtitle">Battle across universe-defining arenas built for speed, strategy, and precision.</p>
+        </div>
+
+        <!-- 4 Fictional Games Grid (100% Code-Based Vector Artwork) -->
+        <div class="games-grid">
+          <!-- Game 1: NEON STRIKE -->
+          <article class="game-card">
+            <div class="game-visual-banner game-banner-neon">
+              <span class="genre-tag">Cyber Arena Shooter</span>
+              <svg viewBox="0 0 100 100" class="card-hero-icon" aria-hidden="true">
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#00f2fe" stroke-width="2" stroke-dasharray="8 6"/>
+                <circle cx="50" cy="50" r="24" fill="none" stroke="#ff007f" stroke-width="2.5"/>
+                <line x1="10" y1="50" x2="90" y2="50" stroke="#00f2fe" stroke-width="2.5"/>
+                <line x1="50" y1="10" x2="50" y2="90" stroke="#00f2fe" stroke-width="2.5"/>
+                <circle cx="50" cy="50" r="6" fill="#00f2fe"/>
+              </svg>
+              <div class="banner-bottom-title">FPS • 5v5 ARENA</div>
+            </div>
+            <div class="game-body">
+              <h3 class="game-title">NEON STRIKE</h3>
+              <p class="game-desc">A blisteringly fast neon cyber shooter where reflex mechanics and gravity hooks decide victory in neon-lit arenas.</p>
+              <div class="game-meta">
+                <span class="meta-item">Mode: 5v5 FPS</span>
+                <span class="meta-item">Tier: Pro League</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 2: CYBER RIVALS -->
+          <article class="game-card">
+            <div class="game-visual-banner game-banner-rivals">
+              <span class="genre-tag">Tactical Mech Strategy</span>
+              <svg viewBox="0 0 100 100" class="card-hero-icon" aria-hidden="true">
+                <polygon points="50,15 82,33 82,67 50,85 18,67 18,33" fill="none" stroke="#9d4edd" stroke-width="3"/>
+                <polygon points="50,26 72,39 72,61 50,74 28,61 28,39" fill="#180e30" stroke="#c77dff" stroke-width="1.8"/>
+                <circle cx="40" cy="45" r="4.5" fill="#00f2fe"/>
+                <circle cx="60" cy="45" r="4.5" fill="#00f2fe"/>
+                <polygon points="40,60 60,60 50,68" fill="#ff007f"/>
+              </svg>
+              <div class="banner-bottom-title">MOBA • 3v3 MECH</div>
+            </div>
+            <div class="game-body">
+              <h3 class="game-title">CYBER RIVALS</h3>
+              <p class="game-desc">Command customizable mech squads in competitive turn-based and tactical real-time lane battles for territorial supremacy.</p>
+              <div class="game-meta">
+                <span class="meta-item">Mode: 3v3 MOBA</span>
+                <span class="meta-item">Tier: Pro League</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 3: SHADOW FRONT -->
+          <article class="game-card">
+            <div class="game-visual-banner game-banner-shadow">
+              <span class="genre-tag">Stealth Infiltration Ops</span>
+              <svg viewBox="0 0 100 100" class="card-hero-icon" aria-hidden="true">
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#00f5d4" stroke-width="1.5" stroke-dasharray="6 5"/>
+                <path d="M50,16 C70,16 82,34 82,58 C82,75 66,84 50,88 C34,84 18,75 18,58 C18,34 30,16 50,16 Z" fill="#06191c" stroke="#00f5d4" stroke-width="2.5"/>
+                <circle cx="38" cy="48" r="4.5" fill="#00f5d4"/>
+                <circle cx="62" cy="48" r="4.5" fill="#00f5d4"/>
+                <circle cx="50" cy="38" r="4" fill="#00f5d4"/>
+                <line x1="36" y1="64" x2="64" y2="64" stroke="#00bbf9" stroke-width="2"/>
+              </svg>
+              <div class="banner-bottom-title">TACTICAL • 4v4 CO-OP</div>
+            </div>
+            <div class="game-body">
+              <h3 class="game-title">SHADOW FRONT</h3>
+              <p class="game-desc">High-stakes dark infiltration combat requiring silent maneuvers, electronic warfare hacks, and team synchronization.</p>
+              <div class="game-meta">
+                <span class="meta-item">Mode: 4v4 Tactical</span>
+                <span class="meta-item">Tier: Major</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Game 4: TITAN CLASH -->
+          <article class="game-card">
+            <div class="game-visual-banner game-banner-titan">
+              <span class="genre-tag">Sci-Fi Battle Royale</span>
+              <svg viewBox="0 0 100 100" class="card-hero-icon" aria-hidden="true">
+                <polygon points="50,14 84,32 76,74 50,88 24,74 16,32" fill="#240a0e" stroke="#ffb703" stroke-width="3"/>
+                <line x1="28" y1="28" x2="72" y2="72" stroke="#ffb703" stroke-width="3" stroke-linecap="round"/>
+                <line x1="72" y1="28" x2="28" y2="72" stroke="#ffb703" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="10" fill="#d90429" stroke="#ffffff" stroke-width="1.8"/>
+              </svg>
+              <div class="banner-bottom-title">BR • 60-PLAYER</div>
+            </div>
+            <div class="game-body">
+              <h3 class="game-title">TITAN CLASH</h3>
+              <p class="game-desc">Drop into colossal planetary warzones where massive mechs and bio-enhanced warriors battle down to the last squad standing.</p>
+              <div class="game-meta">
+                <span class="meta-item">Mode: 60-Player BR</span>
+                <span class="meta-item">Tier: Pro League</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 4: TOURNAMENTS
+         Showcases 3 fictional esports championships with prize pools in Rupees,
+         dates, capacity, status, and registration buttons.
+    ========================================================= -->
+    <section class="section tournaments-section" id="tournaments">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">CHAMPIONSHIPS</span>
+          <h2 class="section-title">ACTIVE TOURNAMENTS</h2>
+          <p class="section-subtitle">Test your squad's power on the global stage. Stake your claim on massive prize pools.</p>
+        </div>
+
+        <!-- 3 Fictional Tournaments Grid (Code-Based Banners) -->
+        <div class="tournaments-grid">
+          <!-- Tournament 1: Arena Masters -->
+          <article class="tourney-card">
+            <div class="tourney-visual-banner tourney-banner-masters">
+              <span class="status-badge status-open">Registration Open</span>
+              <svg viewBox="0 0 80 80" class="tourney-vector-icon" aria-hidden="true">
+                <path d="M24,20 L56,20 L50,50 C46,62 34,62 30,50 Z" fill="#ffb703" stroke="#ffe494" stroke-width="2"/>
+                <path d="M24,28 C14,28 14,44 26,46" fill="none" stroke="#ffb703" stroke-width="2.5"/>
+                <path d="M56,28 C66,28 66,44 54,46" fill="none" stroke="#ffb703" stroke-width="2.5"/>
+                <rect x="36" y="52" width="8" height="12" fill="#fb8500"/>
+                <rect x="26" y="64" width="28" height="6" rx="2" fill="#ffe494"/>
+                <polygon points="40,28 42,34 48,34 43,38 45,44 40,40 35,44 37,38 32,34 38,34" fill="#ffffff"/>
+              </svg>
+              <div class="tourney-prize-strip">PRIZE POOL: ₹15,00,000</div>
+            </div>
+            <div class="tourney-content">
+              <h3 class="tourney-title">Arena Masters</h3>
+              <p class="tourney-subtitle">The apex championship featuring the top 64 international tactical squads.</p>
+              
+              <ul class="tourney-details">
+                <li><span class="detail-label">Date:</span> <span class="detail-value">Nov 15 – 20, 2026</span></li>
+                <li><span class="detail-label">Prize Pool:</span> <span class="detail-value highlight">₹15,00,000</span></li>
+                <li><span class="detail-label">Teams/Players:</span> <span class="detail-value">64 Pro Teams</span></li>
+                <li><span class="detail-label">Format:</span> <span class="detail-value">Double Elimination</span></li>
+              </ul>
+              
+              <button class="btn btn-primary btn-block">REGISTER SQUAD</button>
+            </div>
+          </article>
+
+          <!-- Tournament 2: Cyber Clash -->
+          <article class="tourney-card">
+            <div class="tourney-visual-banner tourney-banner-clash">
+              <span class="status-badge status-open">Registration Open</span>
+              <svg viewBox="0 0 80 80" class="tourney-vector-icon" aria-hidden="true">
+                <line x1="16" y1="64" x2="64" y2="16" stroke="#00f2fe" stroke-width="5" stroke-linecap="round"/>
+                <line x1="16" y1="64" x2="64" y2="16" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <line x1="64" y1="64" x2="16" y2="16" stroke="#ff007f" stroke-width="5" stroke-linecap="round"/>
+                <line x1="64" y1="64" x2="16" y2="16" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="40" cy="40" r="7" fill="#ffffff"/>
+              </svg>
+              <div class="tourney-prize-strip">PRIZE POOL: ₹8,50,000</div>
+            </div>
+            <div class="tourney-content">
+              <h3 class="tourney-title">Cyber Clash</h3>
+              <p class="tourney-subtitle">Intense mid-season invitational tournament designed for rapid 5v5 cyber showdowns.</p>
+              
+              <ul class="tourney-details">
+                <li><span class="detail-label">Date:</span> <span class="detail-value">Dec 05 – 10, 2026</span></li>
+                <li><span class="detail-label">Prize Pool:</span> <span class="detail-value highlight">₹8,50,000</span></li>
+                <li><span class="detail-label">Teams/Players:</span> <span class="detail-value">32 Elite Teams</span></li>
+                <li><span class="detail-label">Format:</span> <span class="detail-value">Best-of-3 Bracket</span></li>
+              </ul>
+              
+              <button class="btn btn-primary btn-block">REGISTER SQUAD</button>
+            </div>
+          </article>
+
+          <!-- Tournament 3: Neon League -->
+          <article class="tourney-card">
+            <div class="tourney-visual-banner tourney-banner-league">
+              <span class="status-badge status-upcoming">Upcoming</span>
+              <svg viewBox="0 0 80 80" class="tourney-vector-icon" aria-hidden="true">
+                <ellipse cx="40" cy="40" rx="35" ry="14" fill="none" stroke="#7928ca" stroke-width="2" transform="rotate(-25 40 40)"/>
+                <circle cx="40" cy="40" r="22" fill="#0d1b38" stroke="#00f2fe" stroke-width="2.5"/>
+                <ellipse cx="40" cy="40" rx="11" ry="22" fill="none" stroke="#00f2fe" stroke-width="1.2"/>
+                <line x1="18" y1="40" x2="62" y2="40" stroke="#00f2fe" stroke-width="1.2"/>
+                <circle cx="64" cy="28" r="3.5" fill="#ff007f"/>
+              </svg>
+              <div class="tourney-prize-strip">PRIZE POOL: ₹22,00,000</div>
+            </div>
+            <div class="tourney-content">
+              <h3 class="tourney-title">Neon League</h3>
+              <p class="tourney-subtitle">The largest annual world series welcoming pro and grassroots challengers worldwide.</p>
+              
+              <ul class="tourney-details">
+                <li><span class="detail-label">Date:</span> <span class="detail-value">Jan 12 – 18, 2027</span></li>
+                <li><span class="detail-label">Prize Pool:</span> <span class="detail-value highlight">₹22,00,000</span></li>
+                <li><span class="detail-label">Teams/Players:</span> <span class="detail-value">128 Challenger Teams</span></li>
+                <li><span class="detail-label">Format:</span> <span class="detail-value">Global Swiss Stage</span></li>
+              </ul>
+              
+              <button class="btn btn-outline btn-block">NOTIFY ME</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         FEATURED PARTNER: DAYMES GAMEHUB ARENA SPOTLIGHT
+         Dedicated showcase for DAYMES GAMEHUB pro gaming lounge.
+    ========================================================= -->
+    <section class="section gamehub-spotlight-section" id="gamehub">
+      <div class="container">
+        <div class="gamehub-card">
+          <div class="gamehub-content">
+            <span class="section-tag">OFFICIAL ARENA NETWORK</span>
+            <h2 class="gamehub-title">DAYMES GAMEHUB</h2>
+            <p class="gamehub-desc">
+              The premier physical and digital home of ARENA X. Experience elite competitive gaming rigs, ultra-low ping gigabit lines, 240Hz OLED battle stations, and broadcast studios engineered for championship glory.
+            </p>
+            <div class="gamehub-features">
+              <div class="gh-feat"><span>⚡ 240Hz Pro Battle Stations</span></div>
+              <div class="gh-feat"><span>🌐 1 Gbps Zero-Jitter Fiber</span></div>
+              <div class="gh-feat"><span>🏆 Official LAN Championship Stage</span></div>
+              <div class="gh-feat"><span>🎙️ Live 4K Casting Studio</span></div>
+            </div>
+            <div class="gamehub-actions">
+              <a href="#contact" class="btn btn-primary">BOOK HUB STATION</a>
+              <a href="#tournaments" class="btn btn-outline">EXPLORE TOURNAMENTS</a>
+            </div>
+          </div>
+          <div class="gamehub-badge-col">
+            <div class="hub-emblem-wrapper">
+              <!-- Inline DAYMES GAMEHUB Crest -->
+              <div class="hub-crest-box">
+                <svg viewBox="0 0 60 60" class="hub-crest-svg" aria-hidden="true">
+                  <polygon points="30,4 54,16 54,44 30,56 6,44 6,16" fill="#0d1428" stroke="#00f2fe" stroke-width="3"/>
+                  <line x1="18" y1="18" x2="42" y2="42" stroke="#00f2fe" stroke-width="4" stroke-linecap="round"/>
+                  <line x1="42" y1="18" x2="18" y2="42" stroke="#ff007f" stroke-width="4" stroke-linecap="round"/>
+                  <circle cx="30" cy="30" r="4" fill="#ffffff"/>
+                </svg>
+                <div class="hub-brand-name">DAYMES GAMEHUB</div>
+                <span class="hub-brand-sub">HQ PRO ARENA</span>
+              </div>
+              <div class="hub-status-box">
+                <span class="status-online">● ARENA ONLINE</span>
+                <span class="hub-city">DAYMES CYBER SECTOR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 5: MATCHES (UPCOMING SCHEDULE)
+         Cards displaying scheduled head-to-head clashes between
+         fictional teams with timing and tournament context.
+    ========================================================= -->
+    <section class="section matches-section" id="matches">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">SCHEDULE & FIXTURES</span>
+          <h2 class="section-title">UPCOMING MATCHES</h2>
+          <p class="section-subtitle">Watch the top seeded teams clash live in the ultimate battle for glory.</p>
+        </div>
+
+        <!-- Matches Cards List -->
+        <div class="matches-grid">
+          <!-- Match 1 -->
+          <article class="match-card">
+            <div class="match-header">
+              <span class="match-tournament">Arena Masters • Quarterfinals</span>
+              <span class="live-pill">LIVE TODAY</span>
+            </div>
+            <div class="match-teams-wrapper">
+              <div class="team-side">
+                <div class="team-vector-badge badge-titans">NT</div>
+                <span class="team-name">Nova Titans</span>
+              </div>
+              <div class="versus-badge">
+                <span class="vs-text">VS</span>
+                <span class="match-time">19:00 UTC</span>
+              </div>
+              <div class="team-side">
+                <div class="team-vector-badge badge-wolves">SW</div>
+                <span class="team-name">Shadow Wolves</span>
+              </div>
+            </div>
+            <div class="match-footer">
+              <span class="match-game">Game: Neon Strike</span>
+              <a href="#matches" class="btn btn-sm btn-outline">Watch Stream</a>
+            </div>
+          </article>
+
+          <!-- Match 2 -->
+          <article class="match-card">
+            <div class="match-header">
+              <span class="match-tournament">Cyber Clash • Semifinals</span>
+              <span class="upcoming-pill">TOMORROW</span>
+            </div>
+            <div class="match-teams-wrapper">
+              <div class="team-side">
+                <div class="team-vector-badge badge-knights">CK</div>
+                <span class="team-name">Cyber Knights</span>
+              </div>
+              <div class="versus-badge">
+                <span class="vs-text">VS</span>
+                <span class="match-time">21:30 UTC</span>
+              </div>
+              <div class="team-side">
+                <div class="team-vector-badge badge-phoenix">PC</div>
+                <span class="team-name">Phoenix Core</span>
+              </div>
+            </div>
+            <div class="match-footer">
+              <span class="match-game">Game: Cyber Rivals</span>
+              <a href="#matches" class="btn btn-sm btn-outline">Set Reminder</a>
+            </div>
+          </article>
+
+          <!-- Match 3 -->
+          <article class="match-card">
+            <div class="match-header">
+              <span class="match-tournament">Showdown Exhibition • Final</span>
+              <span class="upcoming-pill">FRI, OCT 24</span>
+            </div>
+            <div class="match-teams-wrapper">
+              <div class="team-side">
+                <div class="team-vector-badge badge-titans">NT</div>
+                <span class="team-name">Nova Titans</span>
+              </div>
+              <div class="versus-badge">
+                <span class="vs-text">VS</span>
+                <span class="match-time">18:00 UTC</span>
+              </div>
+              <div class="team-side">
+                <div class="team-vector-badge badge-knights">CK</div>
+                <span class="team-name">Cyber Knights</span>
+              </div>
+            </div>
+            <div class="match-footer">
+              <span class="match-game">Game: Titan Clash</span>
+              <a href="#matches" class="btn btn-sm btn-outline">Set Reminder</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 6: RANKINGS / LEADERBOARD
+         Displays standing tables of the competitive teams, points,
+         matches played, and win ratios.
+    ========================================================= -->
+    <section class="section rankings-section" id="rankings">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">SEASON STANDINGS</span>
+          <h2 class="section-title">GLOBAL RANKINGS</h2>
+          <p class="section-subtitle">Real-time leaderboard updated after every official ARENA X championship round.</p>
+        </div>
+
+        <!-- Leaderboard Table Container -->
+        <div class="leaderboard-card">
+          <div class="table-responsive">
+            <table class="rankings-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="th-rank">Rank</th>
+                  <th scope="col">Team</th>
+                  <th scope="col" class="text-center">Matches</th>
+                  <th scope="col" class="text-center">Won</th>
+                  <th scope="col" class="text-center">Win Rate</th>
+                  <th scope="col" class="text-right">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="rank-top rank-1">
+                  <td class="td-rank"><span class="rank-badge rank-gold">1</span></td>
+                  <td class="td-team">
+                    <span class="rank-team-badge badge-titans">NT</span>
+                    <span class="rank-team-name">Nova Titans</span>
+                  </td>
+                  <td class="text-center">36</td>
+                  <td class="text-center">30</td>
+                  <td class="text-center text-success">83.3%</td>
+                  <td class="text-right rank-points">2,850 PTS</td>
+                </tr>
+                <tr class="rank-top rank-2">
+                  <td class="td-rank"><span class="rank-badge rank-silver">2</span></td>
+                  <td class="td-team">
+                    <span class="rank-team-badge badge-phoenix">PC</span>
+                    <span class="rank-team-name">Phoenix Core</span>
+                  </td>
+                  <td class="text-center">34</td>
+                  <td class="text-center">26</td>
+                  <td class="text-center text-success">76.5%</td>
+                  <td class="text-right rank-points">2,620 PTS</td>
+                </tr>
+                <tr class="rank-top rank-3">
+                  <td class="td-rank"><span class="rank-badge rank-bronze">3</span></td>
+                  <td class="td-team">
+                    <span class="rank-team-badge badge-knights">CK</span>
+                    <span class="rank-team-name">Cyber Knights</span>
+                  </td>
+                  <td class="text-center">32</td>
+                  <td class="text-center">23</td>
+                  <td class="text-center">71.9%</td>
+                  <td class="text-right rank-points">2,410 PTS</td>
+                </tr>
+                <tr>
+                  <td class="td-rank"><span class="rank-badge">4</span></td>
+                  <td class="td-team">
+                    <span class="rank-team-badge badge-wolves">SW</span>
+                    <span class="rank-team-name">Shadow Wolves</span>
+                  </td>
+                  <td class="text-center">30</td>
+                  <td class="text-center">20</td>
+                  <td class="text-center">66.7%</td>
+                  <td class="text-right rank-points">2,230 PTS</td>
+                </tr>
+                <tr>
+                  <td class="td-rank"><span class="rank-badge">5</span></td>
+                  <td class="td-team">
+                    <span class="rank-team-badge badge-knights">AS</span>
+                    <span class="rank-team-name">Apex Syndicate</span>
+                  </td>
+                  <td class="text-center">28</td>
+                  <td class="text-center">18</td>
+                  <td class="text-center">64.3%</td>
+                  <td class="text-right rank-points">2,050 PTS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 7: ESPORTS NEWS
+         Editorial articles covering tournament recaps, roster trades,
+         and meta balance patches.
+    ========================================================= -->
+    <section class="section news-section" id="news">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">LATEST DISPATCHES</span>
+          <h2 class="section-title">ESPORTS NEWS</h2>
+          <p class="section-subtitle">Catch up on match highlights, game balance patches, and roster announcements.</p>
+        </div>
+
+        <!-- News Cards Grid (Code-Based Editorial Banners) -->
+        <div class="news-grid">
+          <!-- News 1 -->
+          <article class="news-card">
+            <div class="news-visual-banner news-banner-stadium">
+              <span class="news-category">Tournament</span>
+              <div class="news-icon-symbol">🏟️</div>
+              <div class="news-banner-title">GRAND FINALS LIVE</div>
+            </div>
+            <div class="news-body">
+              <span class="news-date">October 24, 2026</span>
+              <h3 class="news-title">Arena Masters Season 4 Stadium Kickoff Date Announced</h3>
+              <p class="news-excerpt">The committee confirms the grand finals will take place in the Neo-Tokyo Dome with 64 squads battling for the ₹15 Lakh prize.</p>
+              <a href="#news" class="news-link">Read Full Story &rarr;</a>
+            </div>
+          </article>
+
+          <!-- News 2 -->
+          <article class="news-card">
+            <div class="news-visual-banner news-banner-trophy">
+              <span class="news-category">Team Spotlight</span>
+              <div class="news-icon-symbol">🏆</div>
+              <div class="news-banner-title">CLEAN SWEEP 3 - 0</div>
+            </div>
+            <div class="news-body">
+              <span class="news-date">October 22, 2026</span>
+              <h3 class="news-title">Nova Titans Secure Historic Win in Cyber Clash Qualifiers</h3>
+              <p class="news-excerpt">A breathtaking overtime comeback in the final game seals a flawless 3-0 victory against the defending champions.</p>
+              <a href="#news" class="news-link">Read Full Story &rarr;</a>
+            </div>
+          </article>
+
+          <!-- News 3 -->
+          <article class="news-card">
+            <div class="news-visual-banner news-banner-update">
+              <span class="news-category">Game Update</span>
+              <div class="news-icon-symbol">⚙️</div>
+              <div class="news-banner-title">PROTOCOL 4.2 LIVE</div>
+            </div>
+            <div class="news-body">
+              <span class="news-date">October 19, 2026</span>
+              <h3 class="news-title">Patch 4.2 Breakdown: New Maps Added to Neon Strike</h3>
+              <p class="news-excerpt">Developers introduce two brand new vertical maps and comprehensive weapon adjustments ahead of the winter championship.</p>
+              <a href="#news" class="news-link">Read Full Story &rarr;</a>
+            </div>
+          </article>
+
+          <!-- News 4 -->
+          <article class="news-card">
+            <div class="news-visual-banner news-banner-stars">
+              <span class="news-category">Analysis</span>
+              <div class="news-icon-symbol">⭐</div>
+              <div class="news-banner-title">SCOUT REPORT</div>
+            </div>
+            <div class="news-body">
+              <span class="news-date">October 15, 2026</span>
+              <h3 class="news-title">Rising Stars: Top 5 Rookies Entering Titan Clash League</h3>
+              <p class="news-excerpt">Scouts analyze the young prodigies who dominated the grassroots qualifiers and are ready to shake up pro division rosters.</p>
+              <a href="#news" class="news-link">Read Full Story &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 8: TEAMS
+         Showcase cards for the 4 featured fictional esports franchises.
+    ========================================================= -->
+    <section class="section teams-section" id="teams">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-tag">ELITE ROSTERS</span>
+          <h2 class="section-title">FEATURED TEAMS</h2>
+          <p class="section-subtitle">Meet the champion organizations setting the competitive standard in ARENA X.</p>
+        </div>
+
+        <!-- Teams Grid (Code-Based Team Emblems) -->
+        <div class="teams-grid">
+          <!-- Team 1: Nova Titans -->
+          <article class="team-card">
+            <div class="team-badge-header">
+              <div class="team-large-crest crest-titans">
+                <span class="crest-monogram">NT</span>
+                <span class="crest-spark">★</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-title">Nova Titans</h3>
+              <span class="team-region">North America / Global</span>
+              <p class="team-card-desc">Known for their hyper-aggressive frontline rushes and unmatched tactical aim in high-pressure finals.</p>
+              <div class="team-stats-row">
+                <div class="tstat"><strong>3x</strong><span>Champs</span></div>
+                <div class="tstat"><strong>83%</strong><span>Win Rate</span></div>
+                <div class="tstat"><strong>5</strong><span>Active Pros</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Team 2: Shadow Wolves -->
+          <article class="team-card">
+            <div class="team-badge-header">
+              <div class="team-large-crest crest-wolves">
+                <span class="crest-monogram">SW</span>
+                <span class="crest-spark">◆</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-title">Shadow Wolves</h3>
+              <span class="team-region">Europe / Nordic</span>
+              <p class="team-card-desc">Masters of stealth setups, map control traps, and patient counter-attacks that dismantle aggressive rivals.</p>
+              <div class="team-stats-row">
+                <div class="tstat"><strong>2x</strong><span>Champs</span></div>
+                <div class="tstat"><strong>67%</strong><span>Win Rate</span></div>
+                <div class="tstat"><strong>5</strong><span>Active Pros</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Team 3: Cyber Knights -->
+          <article class="team-card">
+            <div class="team-badge-header">
+              <div class="team-large-crest crest-knights">
+                <span class="crest-monogram">CK</span>
+                <span class="crest-spark">✚</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-title">Cyber Knights</h3>
+              <span class="team-region">East Asia / Seoul</span>
+              <p class="team-card-desc">Renowned for textbook utility management, algorithmic coordination, and unbreakable defensive fortifications.</p>
+              <div class="team-stats-row">
+                <div class="tstat"><strong>1x</strong><span>Champs</span></div>
+                <div class="tstat"><strong>72%</strong><span>Win Rate</span></div>
+                <div class="tstat"><strong>5</strong><span>Active Pros</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Team 4: Phoenix Core -->
+          <article class="team-card">
+            <div class="team-badge-header">
+              <div class="team-large-crest crest-phoenix">
+                <span class="crest-monogram">PC</span>
+                <span class="crest-spark">▲</span>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3 class="team-card-title">Phoenix Core</h3>
+              <span class="team-region">Latin America / Brazil</span>
+              <p class="team-card-desc">Famous for thrilling second-half comebacks, passionate gameplay, and high-risk clutch plays.</p>
+              <div class="team-stats-row">
+                <div class="tstat"><strong>2x</strong><span>Champs</span></div>
+                <div class="tstat"><strong>76%</strong><span>Win Rate</span></div>
+                <div class="tstat"><strong>5</strong><span>Active Pros</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 9: CONTACT US
+         A clean, accessible form for squad inquiries, tournament
+         registrations, and general esports questions.
+    ========================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <!-- Contact Left: Information -->
+          <div class="contact-info-col">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2 class="section-title">JOIN THE ARENA</h2>
+            <p class="contact-intro">Looking to register your squad, inquire about tournament sponsorships, or join our broadcast crew? Drop us a transmission.</p>
+            
+            <div class="contact-details">
+              <div class="info-block">
+                <span class="info-title">Headquarters</span>
+                <span class="info-text">ARENA X Dome, DAYMES Cyber Sector 7</span>
+              </div>
+              <div class="info-block">
+                <span class="info-title">Official Contact</span>
+                <span class="info-text">tournaments@arenax.gg</span>
+              </div>
+              <div class="info-block">
+                <span class="info-title">Discord Community</span>
+                <span class="info-text">discord.gg/arenax-official</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Form -->
+          <div class="contact-form-col">
+            <form class="contact-form" id="contactForm" novalidate>
+              <!-- Name Input Field -->
+              <div class="form-group">
+                <label for="userName" class="form-label">Full Name</label>
+                <input type="text" id="userName" name="userName" class="form-input" placeholder="e.g. Alex Vance" required autocomplete="name">
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <!-- Email Input Field -->
+              <div class="form-group">
+                <label for="userEmail" class="form-label">Email Address</label>
+                <input type="email" id="userEmail" name="userEmail" class="form-input" placeholder="e.g. player@arenax.gg" required autocomplete="email">
+                <span class="form-error" id="emailError"></span>
+              </div>
+
+              <!-- Message Input Field -->
+              <div class="form-group">
+                <label for="userMessage" class="form-label">Message / Squad Details</label>
+                <textarea id="userMessage" name="userMessage" class="form-input form-textarea" rows="4" placeholder="Tell us about your team, preferred game, or inquiry..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                TRANSMIT MESSAGE
+              </button>
+              
+              <!-- Success/Feedback notification box -->
+              <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       SECTION 10: FOOTER
+       Branding, site navigation shortcuts, social media links,
+       and academic viva project information.
+  ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <!-- Footer Branding & Mission -->
+      <div class="footer-col footer-brand-col">
+        <!-- Self-Contained Brand Logo in Footer -->
+        <a href="#hero" class="brand-logo footer-logo" aria-label="ARENA X – DAYMES GAMEHUB Home">
+          <span class="logo-shield">
+            <svg viewBox="0 0 36 36" class="logo-shield-svg" aria-hidden="true">
+              <polygon points="18,2 34,10 34,26 18,34 2,26 2,10" fill="#0c1224" stroke="#00f2fe" stroke-width="2.5"/>
+              <line x1="10" y1="10" x2="26" y2="26" stroke="#00f2fe" stroke-width="3" stroke-linecap="round"/>
+              <line x1="26" y1="10" x2="10" y2="26" stroke="#ff007f" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="18" cy="18" r="2.5" fill="#ffffff"/>
+            </svg>
+          </span>
+          <div class="logo-text-block">
+            <div class="logo-main"><span class="logo-white">ARENA</span> <span class="logo-pink">X</span></div>
+            <span class="logo-subtag">DAYMES GAMEHUB</span>
+          </div>
+        </a>
+        <p class="footer-bio">
+          ARENA X is the premier competitive tournament network powered by <strong>DAYMES GAMEHUB</strong>, dedicated to championship gaming excellence, next-gen esports infrastructure, and community showdowns.
+        </p>
+        <span class="footer-badge">Powered by DAYMES GAMEHUB • Pure HTML/CSS/JS</span>
+      </div>
+
+      <!-- Footer Quick Navigation -->
+      <div class="footer-col">
+        <h4 class="footer-heading">NAVIGATION</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#games">Featured Games</a></li>
+          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="#gamehub">DAYMES Gamehub</a></li>
+          <li><a href="#matches">Match Schedules</a></li>
+          <li><a href="#rankings">Leaderboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Community & Tournaments -->
+      <div class="footer-col">
+        <h4 class="footer-heading">COMMUNITY</h4>
+        <ul class="footer-links">
+          <li><a href="#teams">Pro Teams</a></li>
+          <li><a href="#news">Esports News</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+          <li><a href="#tournaments">Rulebook & Terms</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Social Channels -->
+      <div class="footer-col">
+        <h4 class="footer-heading">FOLLOW THE ACTION</h4>
+        <div class="social-links">
+          <a href="#" class="social-tag" aria-label="ARENA X Discord">DISCORD</a>
+          <a href="#" class="social-tag" aria-label="ARENA X Twitch">TWITCH</a>
+          <a href="#" class="social-tag" aria-label="ARENA X YouTube">YOUTUBE</a>
+          <a href="#" class="social-tag" aria-label="ARENA X Twitter">X / TWITTER</a>
+        </div>
+        <p class="footer-status-text">Server Status: <span class="status-online">● ALL ARENAS OPERATIONAL</span></p>
+      </div>
+    </div>
+
+    <!-- Copyright Sub-Footer Bar -->
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p class="copyright-text">
+          &copy; 2026 <strong>ARENA X – ESPORTS ARENA</strong> • Powered by <strong>DAYMES GAMEHUB</strong>. All rights reserved.
+        </p>
+        <p class="viva-note">
+          Designed with Mobile-First Responsive Web Design &amp; Semantic HTML5. 100% Code-Based (Zero External Image Files).
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Link -->
+  <script src="./script.js"></script>
+</body>
+</html>
